@@ -1,0 +1,44 @@
+# Blender MTL File: 'kraan kraan kraan.blend'
+# Material Count: 3
+
+newmtl MATERIAL_NONE
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.21 (2).jpeg
+map_Kd C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.21 (4).jpeg
+map_Ns C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.21 (3).jpeg
+refl C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.21 (1).jpeg
+
+newmtl MATERIAL_NONE.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.04 (2).jpeg
+map_Kd C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.04 (4).jpeg
+map_Ns C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.04 (3).jpeg
+refl C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.29.04 (1).jpeg
+
+newmtl bottom
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.28.49 (3).jpeg
+map_Kd C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.28.49 (1).jpeg
+map_Ns C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.28.49.jpeg
+refl C:\\Users\\Mees Hendriks\\Downloads\\WhatsApp Image 2020-10-01 at 06.28.49 (2).jpeg

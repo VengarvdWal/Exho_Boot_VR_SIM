@@ -219,11 +219,6 @@ Transform:
   m_Father: {fileID: 1413902181}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &49716265 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5125059321930032310, guid: efe415fc321551f4796df8aa00fe15db, type: 3}
-  m_PrefabInstance: {fileID: 357458548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &80403860
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,11 +649,6 @@ Transform:
   m_Father: {fileID: 1076832792}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &336455420 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8366320085172317965, guid: efe415fc321551f4796df8aa00fe15db, type: 3}
-  m_PrefabInstance: {fileID: 357458548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &339421353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3482,11 +3472,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!4 &1783953138 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8366320084942942116, guid: efe415fc321551f4796df8aa00fe15db, type: 3}
-  m_PrefabInstance: {fileID: 357458548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1849477593
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,32 +3846,6 @@ Transform:
   m_Father: {fileID: 776953578}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2036278163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5119234123977165106, guid: efe415fc321551f4796df8aa00fe15db, type: 3}
-  m_PrefabInstance: {fileID: 357458548}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2036278168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036278163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabBegin: 0.55
-  grabEnd: 0.35
-  m_parentHeldObject: 0
-  m_moveHandPosition: 1
-  m_gripTransform: {fileID: 49716265}
-  m_grabVolumes: []
-  m_controller: 2
-  m_parentTransform: {fileID: 1783953138}
-  m_player: {fileID: 336455420}
 --- !u!1 &2049146784
 GameObject:
   m_ObjectHideFlags: 0
