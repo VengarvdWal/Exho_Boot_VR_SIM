@@ -142,6 +142,16 @@ namespace Crest
             collProvider.Query(GetHashCode(), ObjectWidth, _queryPoints, _queryResultDisps, null, _queryResultVels);
         }
 
+        public void IncreaseEnginePower()
+        {
+            _enginePower = 2f;
+        }
+
+        public void DecreaseEnginePower()
+        {
+            _enginePower = -0.5f;
+        }
+
         void FixedUpdateEngine()
         {
             var forcePosition = _rb.position;
