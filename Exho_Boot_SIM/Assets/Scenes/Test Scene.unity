@@ -4006,10 +4006,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ocean
       objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392975, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2947308177164392976, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4054,34 +4050,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _showProxyPlane
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _attachDebugGUI
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _followViewpoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _verifySRPVersionInEditor
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _verifyOpaqueAndDepthTexturesEnabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _simSettingsAnimatedWaves
-      value: 
-      objectReference: {fileID: 11400000, guid: 78bc75eaffbf71d4c87e610d2b78940c, type: 2}
-    - target: {fileID: 2947308177164392977, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
-      propertyPath: _simSettingsFoam
-      value: 
-      objectReference: {fileID: 11400000, guid: dcc8f1b1a5292f046ac8cc6c45952751, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36cb83a1a63db349a92e09c72e9ff24, type: 3}
 --- !u!1 &2015727178

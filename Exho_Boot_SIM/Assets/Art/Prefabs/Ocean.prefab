@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2947308177164392975}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -57,10 +57,10 @@ MonoBehaviour:
   _lodDataResolution: 256
   _geometryDownSampleFactor: 2
   _lodCount: 8
-  _simSettingsAnimatedWaves: {fileID: 0}
+  _simSettingsAnimatedWaves: {fileID: 11400000, guid: 78bc75eaffbf71d4c87e610d2b78940c, type: 2}
   _createSeaFloorDepthData: 1
   _createFoamSim: 1
-  _simSettingsFoam: {fileID: 11400000, guid: 8e1de4c30452ccf499882fefe206c5cd, type: 2}
+  _simSettingsFoam: {fileID: 11400000, guid: dcc8f1b1a5292f046ac8cc6c45952751, type: 2}
   _createDynamicWaveSim: 1
   _simSettingsDynamicWaves: {fileID: 11400000, guid: 2191178a667ebae4594740b717a322f6, type: 2}
   _createFlowSim: 0
@@ -69,12 +69,12 @@ MonoBehaviour:
   _simSettingsShadow: {fileID: 0}
   _createClipSurfaceData: 0
   _showProxyPlane: 1
-  _attachDebugGUI: 1
-  _followViewpoint: 1
+  _attachDebugGUI: 0
+  _followViewpoint: 0
   _uniformTiles: 0
   _disableSkirt: 0
-  _verifySRPVersionInEditor: 1
-  _verifyOpaqueAndDepthTexturesEnabled: 1
+  _verifySRPVersionInEditor: 0
+  _verifyOpaqueAndDepthTexturesEnabled: 0
   _lodTransform: {fileID: 0}
   _lodDataAnimWaves: {fileID: 0}
   _lodDataSeaDepths: {fileID: 0}
