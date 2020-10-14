@@ -12,8 +12,9 @@ public class HingeJointListener : MonoBehaviour
     public UnityEvent OnMinLimitReached;
     //Event called on max reached
     public UnityEvent OnMaxLimitReached;
+    public UnityEvent OnNormalLimit;
 
-    public enum HingeJointState { Min, Max, None }
+    public enum HingeJointState { Min, Max, None, Normal }
     private HingeJoint hinge;
 
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class HingeJointListener : MonoBehaviour
     {
         float angleWithMinLimit = Mathf.Abs(hinge.angle - hinge.limits.min);
         float angleWithMaxLimit = Mathf.Abs(hinge.angle - hinge.limits.max);
+        
 
         //Reached Min
         if (angleWithMinLimit < angleBetweenThreshold)
@@ -42,6 +44,16 @@ public class HingeJointListener : MonoBehaviour
                 OnMaxLimitReached.Invoke();
 
             hingeJointState = HingeJointState.Max;
+        }
+        else if (hinge.angle <= 10f && hinge.angle >= -10f)
+        {            
+
+            if (hingeJointState != HingeJointState.Min && hingeJointState != HingeJointState.Max)
+            {
+                OnNormalLimit.Invoke();
+            }
+
+            hingeJointState = HingeJointState.Normal;
         }
         //No Limit reached
         else

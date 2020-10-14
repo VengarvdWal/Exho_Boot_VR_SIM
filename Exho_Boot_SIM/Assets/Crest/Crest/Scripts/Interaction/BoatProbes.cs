@@ -26,7 +26,7 @@ namespace Crest
         [SerializeField]
         float _forceMultiplier = 10f;
         [Tooltip("Width dimension of boat. The larger this value, the more filtered/smooth the wave response will be."), SerializeField]
-        float _minSpatialLength = 12f;
+        float _minSpatialLength = 15f;
         [SerializeField, Range(0, 1)]
         float _turningHeel = 0.35f;
 
@@ -54,6 +54,8 @@ namespace Crest
         private const float WATER_DENSITY = 1000;
 
         public override Vector3 Velocity => _rb.velocity;
+
+        float sideways;
 
         Rigidbody _rb;
 
@@ -127,7 +129,21 @@ namespace Crest
             // Buoyancy
             FixedUpdateBuoyancy(collProvider);
             FixedUpdateDrag(collProvider, waterSurfaceVel);
-            FixedUpdateEngine();
+            FixedUpdateEngine();            
+        }
+        public void SteerLeft()
+        {
+            _turnBias = 1f;
+        }
+
+        public void SteerRight()
+        {
+            _turnBias = -1f;
+        }
+
+        public void SteerHalt()
+        {
+            _turnBias = 0;
         }
 
         void UpdateWaterQueries(ICollProvider collProvider)
@@ -152,6 +168,11 @@ namespace Crest
             _enginePower = -0.5f;
         }
 
+        public void HaltPower()
+        {
+            _enginePower = 0f;
+        }
+
         void FixedUpdateEngine()
         {
             var forcePosition = _rb.position;
@@ -160,11 +181,16 @@ namespace Crest
             if (_playerControlled) forward += Input.GetAxis("Vertical");
             _rb.AddForceAtPosition(transform.forward * _enginePower * forward, forcePosition, ForceMode.Acceleration);
 
-            var sideways = _turnBias;
+            
+            sideways = _turnBias;
             if (_playerControlled) sideways += (Input.GetKey(KeyCode.A) ? -1f : 0f) + (Input.GetKey(KeyCode.D) ? 1f : 0f);
             var rotVec = transform.up + _turningHeel * transform.forward;
             _rb.AddTorque(rotVec * _turnPower * sideways, ForceMode.Acceleration);
+            
         }
+
+ 
+
 
         void FixedUpdateBuoyancy(ICollProvider collProvider)
         {

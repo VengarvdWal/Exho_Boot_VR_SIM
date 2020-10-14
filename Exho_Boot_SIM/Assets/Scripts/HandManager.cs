@@ -27,12 +27,6 @@ public class HandManager : MonoBehaviour
 
 		InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
 
-		foreach (var item in devices)
-		{
-			Debug.Log(item.name);
-		}
-
-
 		if (devices.Count > 0)
 		{
 			targetDevice = devices[0];
