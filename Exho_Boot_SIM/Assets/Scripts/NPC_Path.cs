@@ -20,12 +20,23 @@ public class NPC_Path : MonoBehaviour
         transform.position = Vector3.MoveTowards(this.transform.position, pathCheckPoints[pathPoint].transform.position, speed);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "points")
         {
             pathPoint++;
             Destroy(collision.gameObject);
         }
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "points")
+        {
+            pathPoint++;
+            Destroy(other.gameObject);
+        }
     }
+
+
 }

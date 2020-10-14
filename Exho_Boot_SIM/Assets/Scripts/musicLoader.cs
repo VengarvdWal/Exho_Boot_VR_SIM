@@ -4,50 +4,28 @@ using UnityEngine;
 
 public class musicLoader : MonoBehaviour
 {
-    [SerializeField] private const string audioName = "[SFM] Slam Jam.wav";
-
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip audioClip;
     [SerializeField] private AudioClip[] musicCollection;
-    [SerializeField] private string soundPath;
+    [SerializeField] private AudioClip[] radioIntros;
 
-    private void Awake()
+    //there is a fixed set of intros and songs for the radio
+    //the songs are random songs from different genre to give the feeling like you're listening to the radio like we do in the real world
+    //the script first starts a with a radio intro
+    //after a intro a random song will be selected and played
+    //when a song ends, a new starts.
+
+    private void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        soundPath = "file://" + Application.streamingAssetsPath + "/Music/";
-        StartCoroutine(LoadAudio());
-    }
-
-    private IEnumerator LoadAudio()
-    {
-        WWW request = GetAudioFromFile(soundPath, audioName);
-        yield return request;
-
-        audioClip = request.GetAudioClip();
-        audioClip.name = audioName;
-
-        PlayAudioFile();
-    }
-
-    private void PlayAudioFile()
-    {
-        audioSource.clip = audioClip;
+        audioSource.clip = radioIntros[Random.Range(0, radioIntros.Length)];
         audioSource.Play();
-        audioSource.loop = false;
-    }
-
-    private WWW GetAudioFromFile(string path, string filename)
-    {
-        string audioToLoad = string.Format(path + "{0}", filename);
-        WWW request = new WWW(audioToLoad);
-        return request;
     }
 
     private void Update()
     {
         if (!audioSource.isPlaying)
         {
-            
+            audioSource.clip = musicCollection[Random.Range(0, musicCollection.Length)];
+            audioSource.Play();
         }
     }
 }
